@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal</title>
+    <link rel="stylesheet" href="/css/stylesheet_final.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button id="filterButton" class="filter-button">Lesezeichen Einträge</button>
+    </div>
+    <div class="entry-form">
+      <input type="text" id="title" placeholder="Titel" />
+      <textarea id="content" placeholder="Text"></textarea>
+      <input type="date" id="entryDate" />
+      <button onclick="createEntry()">&#62; Erstelle Tagebucheintrag &#60;</button>
+    </div>
+    <div id="entries"></div>
+    <script type="module">
+      import { createEntry, init } from './dist/script.js';
+      window.createEntry = createEntry;
+      init();
+    </script>
+  </body>
+</html>
