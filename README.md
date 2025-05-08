@@ -1,5 +1,3 @@
-# Readme für das Journal-Projekt
-
 ## Projektbeschreibung
 
 Das Projekt ist einfach auszuführen: Öffnen Sie einfach die Datei "journal.html" in Ihrem Browser, um Einträge zu erstellen und anzuzeigen. 
